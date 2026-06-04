@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colortex SA — Matriz Energética 2026</title>
+
+  <!-- ── CSS ─────────────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="css/variables.css?v=202606010232">
+  <link rel="stylesheet" href="css/base.css?v=202606010232">
+  <link rel="stylesheet" href="css/layout.css?v=202606010232">
+  <link rel="stylesheet" href="css/components.css?v=202606010232">
+  <link rel="stylesheet" href="css/forms.css?v=202606010232">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     LOGIN
+══════════════════════════════════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="lw">
+
+    <!-- Panel izquierdo: branding + perfiles -->
+    <div class="ll">
+
+      <!-- Logo + nombre -->
+      <div class="ll-brand">
+        <div class="ll-logo">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M13 2L3 7v6c0 5.25 4.25 10.15 10 11.35C18.75 23.15 23 18.25 23 13V7L13 2z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+            <path d="M9 13l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="ll-title">Matriz Energética Integrada</div>
+          <div class="ll-sub">Karatex SA · Sistema de Gestión</div>
+        </div>
+      </div>
+
+      <!-- Descripción -->
+      <div class="ll-desc">
+        Plataforma centralizada de análisis energético. Integra Gas Natural y
+        Energía Eléctrica con indicadores de producción para el cálculo de
+        consumo específico y costo específico por sector productivo.
+      </div>
+
+      <!-- Módulos disponibles -->
+      <div style="margin-bottom:20px">
+        <div style="font-family:var(--fontc);font-size:9px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.35);text-transform:uppercase;margin-bottom:10px">
+          Módulos del sistema
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+          <div class="ll-module">🔥 Gas Natural</div>
+          <div class="ll-module">⚡ Energía Eléctrica</div>
+          <div class="ll-module">🏭 Gas vs Producción</div>
+          <div class="ll-module">📊 EE vs Producción</div>
+          <div class="ll-module">🏆 Dashboard Ejecutivo</div>
+          <div class="ll-module">📡 Lecturas / Distrib.</div>
+        </div>
+      </div>
+
+      <!-- Perfiles -->
+      <div style="font-family:var(--fontc);font-size:9px;font-weight:700;letter-spacing:1.5px;color:rgba(255,255,255,.35);text-transform:uppercase;margin-bottom:8px">
+        Seleccione su perfil de acceso
+      </div>
+
+      <div class="profile-card sel" data-profile="produccion">
+        <div class="pc-av">PR</div>
+        <div>
+          <div class="pc-name">Producción</div>
+          <div class="pc-role">Carga operativa diaria</div>
+        </div>
+      </div>
+      <div class="profile-card" data-profile="pcp">
+        <div class="pc-av">PC</div>
+        <div>
+          <div class="pc-name">Oficina PCP</div>
+          <div class="pc-role">Planificación y control</div>
+        </div>
+      </div>
+      <div class="profile-card" data-profile="ofitec">
+        <div class="pc-av">OT</div>
+        <div>
+          <div class="pc-name">Oficina Técnica</div>
+          <div class="pc-role">Lecturas y distribuidora</div>
+        </div>
+      </div>
+      <div class="profile-card" data-profile="jefe">
+        <div class="pc-av">RE</div>
+        <div>
+          <div class="pc-name">Responsable de Energía</div>
+          <div class="pc-role">Administración completa</div>
+        </div>
+      </div>
+      <div class="profile-card" data-profile="gerencia">
+        <div class="pc-av">GE</div>
+        <div>
+          <div class="pc-name">Gerencia</div>
+          <div class="pc-role">Dashboard ejecutivo · Solo lectura</div>
+        </div>
+      </div>
+
+      <div class="ll-foot">
+        <span>v9.0 · Gas Natural + EE + Producción</span>
+        <span style="margin:0 8px;opacity:.4">·</span>
+        <span>SharePoint Online</span>
+        <span style="margin:0 8px;opacity:.4">·</span>
+        <span id="ll-fecha-hora"></span>
+      </div>
+    </div>
+
+    <!-- Panel derecho: formulario de acceso -->
+    <div class="lr">
+
+      <!-- Header panel derecho -->
+      <div style="margin-bottom:28px">
+        <div class="lr-title">Acceso Seguro</div>
+        <div class="lr-sub">Ingrese su contraseña para continuar</div>
+      </div>
+
+      <!-- Perfil seleccionado (visual) -->
+      <div id="lr-perfil-sel" style="
+        background:rgba(45,126,247,.08);
+        border:1px solid rgba(45,126,247,.2);
+        border-radius:8px;
+        padding:10px 14px;
+        margin-bottom:16px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        font-family:var(--fontc);
+        font-size:12px;
+        color:var(--text2);
+      ">
+        <span style="font-size:18px">👤</span>
+        <span id="lr-perfil-nombre">Seleccione un perfil</span>
+      </div>
+
+      <select id="l-sel" style="display:none">
+        <option value="">— Seleccione perfil —</option>
+        <option value="produccion">Producción</option>
+        <option value="pcp">Oficina PCP</option>
+        <option value="ofitec">Oficina Técnica</option>
+        <option value="jefe">Responsable de Energía</option>
+        <option value="gerencia">Gerencia</option>
+      </select>
+
+      <input type="password" id="l-pass" placeholder="Contraseña" autocomplete="current-password">
+
+      <button class="btn-login" id="btn-login-main">
+        <span id="btn-login-txt">INGRESAR AL SISTEMA</span>
+      </button>
+
+      <div class="lerr" id="l-err"></div>
+
+      <!-- Info SharePoint -->
+      <div style="
+        margin-top:auto;
+        padding-top:20px;
+        border-top:1px solid var(--border);
+        font-size:10px;
+        color:var(--text3);
+        line-height:1.6;
+      ">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+          <span id="ll-sp-dot" style="font-size:8px">⬤</span>
+          <span id="ll-sp-txt">Verificando conexión SharePoint...</span>
+        </div>
+        <div>karatex.sharepoint.com/sites/MatrizEnergeticaIntegrada</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     SPLASH — PANTALLA DE CARGA
+══════════════════════════════════════════════════════════════════ -->
+<div id="splash-screen">
+  <div class="splash-card">
+    <div class="splash-logo">
+      <svg width="32" height="32" viewBox="0 0 26 26" fill="none">
+        <path d="M13 2L3 7v6c0 5.25 4.25 10.15 10 11.35C18.75 23.15 23 18.25 23 13V7L13 2z"
+          fill="rgba(45,126,247,.2)" stroke="rgba(45,126,247,.8)" stroke-width="1.5"/>
+        <path d="M9 13l3 3 5-5" stroke="#2D7EF7" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="splash-title">Matriz Energética Integrada</div>
+    <div class="splash-sub">Karatex SA</div>
+    <div class="splash-bar"><div class="splash-progress" id="splash-progress"></div></div>
+    <div class="splash-msg" id="splash-msg">Iniciando sistema...</div>
+  </div>
+</div>
+
+<!-- Banner modo offline (oculto por defecto) -->
+<div id="offline-banner" style="display:none">
+  ⚠ Modo sin conexión a SharePoint — los datos no se guardarán en la nube esta sesión
+  <button id="offline-retry" style="margin-left:12px;padding:2px 10px;border-radius:4px;
+    border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;
+    cursor:pointer;font-size:11px">Reintentar</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     NOTIFICACIÓN TOAST
+══════════════════════════════════════════════════════════════════ -->
+<div class="notif" id="notif"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     APP SHELL
+══════════════════════════════════════════════════════════════════ -->
+<div id="app">
+
+  <!-- ── SIDEBAR ────────────────────────────────────────────────── -->
+  <div class="sidebar">
+    <div class="sb-hdr" style="display:flex;align-items:center;justify-content:space-between">
+      <div class="sb-brand">
+        <div class="sb-logo">CX</div>
+        <div class="sb-brand-txt">
+          <div class="t1">Colortex SA</div>
+          <div class="t2">Energía · 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="sb-role" id="sb-role">—</div>
+    <div id="nav-menu"></div>
+
+    <!-- Estado del sistema -->
+    <div id="sb-status" style="
+      margin: 8px 8px 0;
+      padding: 8px 10px;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-family: var(--fontc);
+      font-size: 10px;
+      color: var(--text3);
+      display: none;
+    ">
+      <div style="font-weight:700;letter-spacing:.5px;margin-bottom:6px;color:var(--text2)">
+        ESTADO DEL SISTEMA
+      </div>
+      <div id="sb-status-sp" style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span>SharePoint</span>
+        <span id="sb-sp-dot" style="color:var(--text3)">⬤ —</span>
+      </div>
+      <div id="sb-status-queue" style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span>Pendientes sync</span>
+        <span id="sb-queue-count" style="color:var(--text3)">0</span>
+      </div>
+      <div id="sb-status-prod" style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span>Últ. registro GN</span>
+        <span id="sb-last-prod" style="color:var(--text3)">—</span>
+      </div>
+      <div id="sb-status-ee" style="display:flex;justify-content:space-between">
+        <span>Últ. registro EE</span>
+        <span id="sb-last-ee" style="color:var(--text3)">—</span>
+      </div>
+      <div id="sb-sync-wrap" style="margin-top:8px;display:none">
+        <button id="sb-sync-now" style="
+          width:100%;padding:4px;font-family:var(--fontc);font-size:10px;
+          font-weight:700;border:1px solid var(--accent);border-radius:4px;
+          background:transparent;color:var(--accent);cursor:pointer;
+        ">🔄 Sincronizar ahora
+          <span id="sb-sync-badge" style="
+            display:none;background:var(--red);color:#fff;
+            border-radius:10px;padding:0 5px;font-size:9px;margin-left:4px
+          "></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="sb-foot">
+      <button class="btn-logout">&#10155; Cerrar sesión</button>
+    </div>
+  </div>
+
+  <!-- ── MAIN AREA ──────────────────────────────────────────────── -->
+  <div class="main-area">
+
+    <!-- Topbar sticky — contiene también el segmentador -->
+    <div class="topbar">
+      <div class="tb-left">
+        <div class="tb-tag">Matriz Gestión Energética</div>
+        <div class="tb-title">COLORTEX SA · GESTIÓN ENERGÉTICA INTEGRADA</div>
+      </div>
+      <div class="tb-div"></div>
+      <div class="tb-info">
+        <div class="l1" id="tb-dia">—</div>
+        <div class="l2">Colortex SA · Gestión Energética 2026 · Ciclo 06:00 → 06:00 hs</div>
+      </div>
+      <div class="tb-right">
+        <div class="tb-indicators-wrap">
+          <div class="tb-indicators-lbl">GAS NATURAL</div>
+          <div class="tb-indicators">
+            <div class="tb-ind-box tb-ind-disp">
+              <span class="tb-ind-label">VOL DISPONIBLE</span>
+              <span class="tb-ind-value" id="tb-vdisp">—</span>
+            </div>
+            <div class="tb-ind-box tb-ind-cons">
+              <span class="tb-ind-label">CONSUMIDO</span>
+              <span class="tb-ind-value" id="tb-vcons">—</span>
+            </div>
+          </div>
+        </div>
+        <div class="tb-div" style="width:1px;height:44px;background:var(--border);margin:0 6px"></div>
+        <!-- Botones de entorno: acceso rápido a módulos EE -->
+        <div class="tb-indicators-wrap">
+          <div class="tb-indicators-lbl">ENERGÍA ELÉCTRICA</div>
+          <div class="tb-indicators" style="gap:4px">
+            <button class="tb-ee-btn" id="tb-btn-ee-dash" title="Dashboard EE">
+              📊 Análisis EE
+            </button>
+            <button class="tb-ee-btn" id="tb-btn-ee-form" title="Carga de datos EE">
+              📝 Carga EE
+            </button>
+          </div>
+        </div>
+        <div class="tb-div" style="width:1px;height:44px;background:var(--border);margin:0 6px"></div>
+        <div class="tb-indicators-wrap">
+          <div class="tb-indicators-lbl">GAS + PRODUCCIÓN</div>
+          <div class="tb-indicators" style="gap:4px">
+            <button class="tb-ee-btn" id="tb-btn-gvp" title="Análisis Gas vs Producción">
+              ⚡ Gas vs Prod
+            </button>
+          </div>
+        </div>
+        <div class="tb-alert" id="tb-rest">&#9888; SISTEMA OPERA CON RESTRICCIÓN</div>
+        <div id="tb-sp-status" class="tb-sp-offline" title="Estado SharePoint">⬤ SP</div>
+        <button class="btn-theme" title="Alternar tema">&#9728;</button>
+      </div>
+    </div>
+    <!-- Segmentador: integrado debajo del topbar, dentro de la barra sticky de energía -->
+
+    <!-- Content: vistas inyectadas por Router -->
+    <div class="content">
+      <!-- Barra de energía sticky — fija debajo del topbar -->
+      <div id="energy-bar">
+        <div class="energy-bar-inner">
+          <button class="etab active" id="etab-gas" data-etab="gas">GAS NATURAL</button>
+          <button class="etab" id="etab-elec" data-etab="elec">ENERGÍA ELÉCTRICA</button>
+          <button class="etab" id="etab-aire" data-etab="aire">AIRE COMPRIMIDO</button>
+          <button class="etab etab-wip" id="etab-vapor" data-etab="vapor">VAPOR</button>
+          <button class="etab etab-wip" id="etab-solar" data-etab="solar">SOLAR</button>
+        </div>
+        <!-- Segmentador sticky debajo de los tabs, dentro de la barra -->
+        <div id="seg-sticky"></div>
+      </div>
+
+      <div id="view-dashboard"   class="view active"></div>
+      <div id="view-consulta"    class="view"></div>
+      <div id="view-form-prod"   class="view"></div>
+      <div id="view-form-pcp"    class="view"></div>
+      <div id="view-form-ofitec" class="view"></div>
+      <div id="view-admin"       class="view"></div>
+      <!-- Módulo Energía Eléctrica -->
+      <div id="view-ee-dashboard" class="view"></div>
+      <div id="view-ee-form"      class="view"></div>
+      <!-- Módulo Análisis Gas vs Producción -->
+      <div id="view-gvp"           class="view"></div>
+      <!-- Formulario Indicadores Producción -->
+      <div id="view-form-prod-ind" class="view"></div>
+      <!-- EE vs Producción -->
+      <div id="view-ee-vs-prod"           class="view"></div>
+      <!-- Alertas -->
+      <div id="view-alertas"              class="view"></div>
+      <!-- Resumen de Turno -->
+      <div id="view-resumen-turno"        class="view"></div>
+      <!-- Dashboard Ejecutivo -->
+      <div id="view-dashboard-ejecutivo"  class="view"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     DEPENDENCIAS EXTERNAS
+══════════════════════════════════════════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     MÓDULOS DE LA APLICACIÓN
+     Orden de carga: config → utils → state → data → engines → ui → views → boot
+══════════════════════════════════════════════════════════════════ -->
+
+<!-- Config centralizado -->
+<script src="config/config.js?v=202606010232"></script>
+
+<!-- Utilidades (sin dependencias) -->
+<script src="js/utils/formatters.js?v=202606010232"></script>
+<script src="js/utils/dateHelpers.js?v=202606010232"></script>
+<script src="js/utils/csvExport.js?v=202606040001"></script>
+<script src="js/utils/validator.js?v=202606040001"></script>
+<script src="js/utils/excelExport.js?v=202606040001"></script>
+
+<!-- Estado global -->
+<script src="js/core/state.js?v=202606010232"></script>
+
+<!-- Acceso a datos -->
+<script src="js/data/repository.js?v=202606010232"></script>
+
+<!-- Engines de cálculo -->
+<script src="js/engines/EnergyEngine.js?v=202606010232"></script>
+<script src="js/engines/KpiEngine.js?v=202606010232"></script>
+<script src="js/engines/TariffEngine.js?v=202606010232"></script>
+<script src="js/engines/FlowEngine.js?v=202606010232"></script>
+<script src="js/engines/SyncEngine.js?v=202606010232"></script>
+
+<!-- UI base -->
+<script src="js/ui/ui.js?v=202606010232"></script>
+
+<!-- Charts -->
+<script src="js/charts/GaugeRenderer.js?v=202606010232"></script>
+
+<!-- Vistas -->
+<script src="js/views/dashboard/dashboard.js?v=202606010232"></script>
+<script src="js/views/dashboard/comparacion.js?v=202606010232"></script>
+<script src="js/views/consulta.js?v=202606010232"></script>
+<script src="js/views/formProd.js?v=202606010232"></script>
+<script src="js/views/formPcp.js?v=202606010232"></script>
+<script src="js/views/formOfitec.js?v=202606010232"></script>
+<script src="js/views/admin.js?v=202606010232"></script>
+
+<!-- SharePoint Integration -->
+<script src="js/data/sharepoint.js?v=202606030001"></script>
+<script src="js/data/spRepository.js?v=202606030001"></script>
+<script src="js/data/offlineQueue.js?v=202606040001"></script>
+
+<!-- Módulo Energía Eléctrica -->
+<script src="js/engines/EEEngine.js?v=202606020001"></script>
+<script src="js/views/ee/eeDashboard.js?v=202606020001"></script>
+<script src="js/views/ee/eeForm.js?v=202606020001"></script>
+
+<!-- Módulo Análisis Gas vs Producción -->
+<script src="js/engines/GasVsProdEngine.js?v=202606040001"></script>
+<script src="js/views/gasVsProd.js?v=202606040001"></script>
+<script src="js/views/formProdInd.js?v=202606040001"></script>
+<script src="js/views/eeVsProd.js?v=202606040001"></script>
+<script src="js/engines/AlertEngine.js?v=202606040001"></script>
+<script src="js/views/alertas.js?v=202606040001"></script>
+<script src="js/views/resumenTurno.js?v=202606040001"></script>
+<script src="js/views/dashboardEjecutivo.js?v=202606040001"></script>
+
+<!-- Núcleo: auth y router (después de las vistas para que Views.* exista) -->
+<script src="js/core/auth.js?v=202606010232"></script>
+<script src="js/core/router.js?v=202606010232"></script>
+
+<!-- Arranque de la aplicación -->
+<script src="js/core/boot.js?v=202606010232"></script>
+
+  <!-- Botón flotante para colapsar/expandir sidebar — siempre visible -->
+  <button id="btn-sb-toggle" title="Ocultar / mostrar panel de navegación"
+    style="position:fixed;top:50%;left:0;transform:translateY(-50%);
+      z-index:9999;width:18px;height:52px;
+      background:var(--accent);color:#fff;
+      border:none;border-radius:0 6px 6px 0;
+      cursor:pointer;font-size:13px;font-weight:700;
+      display:flex;align-items:center;justify-content:center;
+      transition:left 0.22s ease, background 0.15s;
+      box-shadow:2px 0 8px rgba(0,0,0,.18);
+      writing-mode:horizontal-tb">
+    &#8676;
+  </button>
+</body>
+</html>

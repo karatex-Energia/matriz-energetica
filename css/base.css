@@ -1,0 +1,46 @@
+/**
+ * base.css
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Reset, body, scrollbar, print · Colortex SA · Matriz Energética
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+/* ── RESET ─────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── BODY ──────────────────────────────────────────────────────── */
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 13px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ── SCROLLBAR ─────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* ── PRINT ─────────────────────────────────────────────────────── */
+@media print {
+  .sidebar,
+  .topbar { display: none; }
+  .main-area { padding: 0; }
+}
+
+/* ── ANIMACIONES GLOBALES ──────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

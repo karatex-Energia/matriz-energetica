@@ -1,0 +1,121 @@
+[
+  {
+    "n": "BENNINGER",
+    "cme": 108,
+    "tipo": "INDIRECTO",
+    "sec": "ENCOLADO",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "MCOY",
+    "cme": 50,
+    "tipo": "INDIRECTO",
+    "sec": "ENCOLADO",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "RED FLAG (T)",
+    "cme": 170,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "RED FLAG (L)",
+    "cme": 128,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "SANFOR",
+    "cme": 70,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "RAMA01",
+    "cme": 80,
+    "tipo": "DIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "RAMA02",
+    "cme": 60,
+    "tipo": "MIXTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "RAMA03",
+    "cme": 130,
+    "tipo": "DIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "JIGGER 03",
+    "cme": 15,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "JIGGER 04",
+    "cme": 15,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "JIGGER 06",
+    "cme": 15,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "JIGGER 07",
+    "cme": 15,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "FONGS 01",
+    "cme": 60,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "FONGS 02",
+    "cme": 40,
+    "tipo": "INDIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "KILOGRAMO/HORA"
+  },
+  {
+    "n": "ZIMMER",
+    "cme": 80,
+    "tipo": "DIRECTO",
+    "sec": "TINTORERIA",
+    "unid": "METROS/HORA"
+  },
+  {
+    "n": "CALDERA 10 Tn",
+    "cme": 230,
+    "tipo": "DIRECTO",
+    "sec": "SALA CALDERA",
+    "unid": "TONELADAS/HORA"
+  },
+  {
+    "n": "CALDERA 4,5 Tn",
+    "cme": 90,
+    "tipo": "DIRECTO",
+    "sec": "SALA CALDERA",
+    "unid": "TONELADAS/HORA"
+  }
+]

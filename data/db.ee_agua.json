@@ -1,0 +1,22 @@
+{
+  "pozos": [
+    {
+      "id": "P1",
+      "n": "Pozo N° 1",
+      "pot_kW": 90,
+      "m3_por_hora": 133
+    },
+    {
+      "id": "P2",
+      "n": "Pozo N° 2",
+      "pot_kW": 37,
+      "m3_por_hora": 50
+    }
+  ],
+  "distribucion": {
+    "pct_hilanderia": 0.15,
+    "pct_tejeria": 0.15,
+    "pct_terminado": 0.7
+  },
+  "lecturas": []
+}

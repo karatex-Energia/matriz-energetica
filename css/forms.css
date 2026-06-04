@@ -1,0 +1,146 @@
+/**
+ * forms.css
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Formularios, tablas de datos, inputs, botones, grids de formulario
+ * Colortex SA · Matriz Energética
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+/* ══════════════════════════════════════════════════════════════════
+   PAGE TITLES
+══════════════════════════════════════════════════════════════════ */
+.pg-title { font-family: 'Calibri', var(--fontc); font-size: 19px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.pg-desc  { font-size: 11px; color: var(--text3); margin-bottom: 14px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   FORM CARDS
+══════════════════════════════════════════════════════════════════ */
+.fcard       { background: var(--card); border: 1px solid var(--border); border-radius: 7px; padding: 14px 18px; margin-bottom: 10px; }
+.fcard-title { font-family: 'Calibri', var(--fontc); font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--text2); text-transform: uppercase; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid var(--border); }
+
+/* ══════════════════════════════════════════════════════════════════
+   FORM GRID LAYOUTS
+══════════════════════════════════════════════════════════════════ */
+.fgrid  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+.fg2    { grid-template-columns: repeat(2, 1fr); }
+.fg4    { grid-template-columns: repeat(4, 1fr); }
+.fg6    { grid-template-columns: repeat(6, 1fr); }
+.fspan  { grid-column: 1 / -1; }
+
+/* ══════════════════════════════════════════════════════════════════
+   FORM GROUPS E INPUTS
+══════════════════════════════════════════════════════════════════ */
+.fgrp   { display: flex; flex-direction: column; gap: 3px; }
+.flabel { font-family: 'Calibri', var(--fontc); font-size: 9px; font-weight: 700; letter-spacing: 1px; color: var(--text3); text-transform: uppercase; }
+
+.fctl {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 6px 9px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 12px;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+}
+.fctl:focus          { border-color: var(--accent); }
+.fctl.ro             { color: var(--text3); background: var(--bg2); cursor: default; }
+.fctl.yel            { background: rgba(234,179,8,0.05); border-color: rgba(234,179,8,0.2); }
+.fctl.yel:focus      { border-color: var(--yellow); }
+select.fctl option   { background: var(--bg3); color: var(--text); }
+
+/* ══════════════════════════════════════════════════════════════════
+   FORM ACTIONS
+══════════════════════════════════════════════════════════════════ */
+.factions { display: flex; gap: 7px; justify-content: flex-end; margin-top: 10px; }
+
+.btn-pri {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 6px 14px;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-pri:hover { background: var(--accent2); }
+
+.btn-sec {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 11px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-sec:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ══════════════════════════════════════════════════════════════════
+   TABLAS DE DATOS
+══════════════════════════════════════════════════════════════════ */
+.twrap { background: var(--card); border: 1px solid var(--border); border-radius: 7px; overflow: hidden; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--fontc);
+  font-size: 12px;
+}
+thead th {
+  background: var(--bg3);
+  padding: 7px 9px;
+  text-align: left;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: var(--text3);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover      { background: var(--card2); }
+tbody td            { padding: 6px 9px; color: var(--text2); }
+td.v                { color: var(--text); font-weight: 500; }
+
+/* ── VALIDACIÓN DE CAMPOS ─────────────────────────────────────────── */
+.form-input[data-error="1"],
+.fctl[data-error="1"],
+input[data-error="1"],
+select[data-error="1"] {
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.15) !important;
+}
+
+.field-error-msg {
+  font-size: 10px;
+  color: var(--red);
+  margin-top: 2px;
+  font-family: var(--fontc);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Shake animation para campos con error */
+@keyframes shake-field {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-4px); }
+  40%       { transform: translateX(4px); }
+  60%       { transform: translateX(-3px); }
+  80%       { transform: translateX(3px); }
+}
+.form-input[data-error="1"] {
+  animation: shake-field .35s ease;
+}

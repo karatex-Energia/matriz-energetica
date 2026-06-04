@@ -1,0 +1,495 @@
+[
+  {
+    "mes": "2024-01",
+    "trafos": {
+      "Transformador Nº 1": 105872.0,
+      "Transformador Nº 2": 88284.8,
+      "Transformador Nº 3": 119123.2,
+      "Transformador Nº 4": 48476.8,
+      "Transformador Nº 5": 105539.2,
+      "Transformador Nº 6": 16921.6,
+      "Transformador Nº 7": 105004.8,
+      "Transformador Nº 8": 11923.2,
+      "Transformador Nº 9": 16858.8,
+      "Transformador Nº 10": 178713.6
+    },
+    "total_kWh": 796718.0,
+    "smec_kWh": 906419
+  },
+  {
+    "mes": "2024-02",
+    "trafos": {
+      "Transformador Nº 1": 178732.8,
+      "Transformador Nº 2": 115929.6,
+      "Transformador Nº 3": 161555.2,
+      "Transformador Nº 4": 15548.8,
+      "Transformador Nº 5": 206108.8,
+      "Transformador Nº 6": 30080.0,
+      "Transformador Nº 7": 147840.0,
+      "Transformador Nº 8": 15595.2,
+      "Transformador Nº 9": 23105.6,
+      "Transformador Nº 10": 340585.6
+    },
+    "total_kWh": 1235081.6,
+    "smec_kWh": 1433182
+  },
+  {
+    "mes": "2024-03",
+    "trafos": {
+      "Transformador Nº 1": 84688.0,
+      "Transformador Nº 2": 57008.0,
+      "Transformador Nº 3": 55904.0,
+      "Transformador Nº 4": 21513.6,
+      "Transformador Nº 5": 156054.4,
+      "Transformador Nº 6": 19142.4,
+      "Transformador Nº 7": 123401.6,
+      "Transformador Nº 8": 13163.2,
+      "Transformador Nº 9": 42651.0,
+      "Transformador Nº 10": 195161.6
+    },
+    "total_kWh": 768687.8,
+    "smec_kWh": 902192
+  },
+  {
+    "mes": "2024-04",
+    "trafos": {
+      "Transformador Nº 1": 122857.6,
+      "Transformador Nº 2": 29587.2,
+      "Transformador Nº 3": 42764.8,
+      "Transformador Nº 4": 3964.8,
+      "Transformador Nº 5": 29776.0,
+      "Transformador Nº 6": 4323.2,
+      "Transformador Nº 7": 115488.0,
+      "Transformador Nº 8": 8532.8,
+      "Transformador Nº 9": 41489.0,
+      "Transformador Nº 10": 0
+    },
+    "total_kWh": 398783.4,
+    "smec_kWh": 458215
+  },
+  {
+    "mes": "2024-05",
+    "trafos": {
+      "Transformador Nº 1": 191686.4,
+      "Transformador Nº 2": 80412.8,
+      "Transformador Nº 3": 26518.4,
+      "Transformador Nº 4": 50656.0,
+      "Transformador Nº 5": 199724.8,
+      "Transformador Nº 6": 25385.6,
+      "Transformador Nº 7": 187030.4,
+      "Transformador Nº 8": 14611.2,
+      "Transformador Nº 9": 65989.0,
+      "Transformador Nº 10": 285440
+    },
+    "total_kWh": 1127454.6,
+    "smec_kWh": 1222086
+  },
+  {
+    "mes": "2024-06",
+    "trafos": {
+      "Transformador Nº 1": 140393.6,
+      "Transformador Nº 2": 85075.2,
+      "Transformador Nº 3": 17606.4,
+      "Transformador Nº 4": 75180.8,
+      "Transformador Nº 5": 135728.0,
+      "Transformador Nº 6": 20608.0,
+      "Transformador Nº 7": 154835.2,
+      "Transformador Nº 8": 14057.6,
+      "Transformador Nº 9": 49186.2,
+      "Transformador Nº 10": 179152.0
+    },
+    "total_kWh": 871823.0,
+    "smec_kWh": 976386
+  },
+  {
+    "mes": "2024-07",
+    "trafos": {
+      "Transformador Nº 1": 179072.0,
+      "Transformador Nº 2": 110867.2,
+      "Transformador Nº 3": 87430.4,
+      "Transformador Nº 4": 204800,
+      "Transformador Nº 5": 16608.0,
+      "Transformador Nº 6": 29100.8,
+      "Transformador Nº 7": 204166.4,
+      "Transformador Nº 8": 16800,
+      "Transformador Nº 9": 74669.0,
+      "Transformador Nº 10": 311561.6
+    },
+    "total_kWh": 1235075.4,
+    "smec_kWh": 1376899
+  },
+  {
+    "mes": "2024-08",
+    "trafos": {
+      "Transformador Nº 1": 211584.0,
+      "Transformador Nº 2": 116243.2,
+      "Transformador Nº 3": 131078.4,
+      "Transformador Nº 4": 225392.0,
+      "Transformador Nº 5": 17712.0,
+      "Transformador Nº 6": 29964.8,
+      "Transformador Nº 7": 211081.6,
+      "Transformador Nº 8": 17022.4,
+      "Transformador Nº 9": 71209.6,
+      "Transformador Nº 10": 360278.4
+    },
+    "total_kWh": 1391566.4,
+    "smec_kWh": 1571758
+  },
+  {
+    "mes": "2024-09",
+    "trafos": {
+      "Transformador Nº 1": 222128.0,
+      "Transformador Nº 2": 141398.4,
+      "Transformador Nº 3": 143001.6,
+      "Transformador Nº 4": 293456.0,
+      "Transformador Nº 5": 19200,
+      "Transformador Nº 6": 33600,
+      "Transformador Nº 7": 191446.4,
+      "Transformador Nº 8": 18240,
+      "Transformador Nº 9": 67383.4,
+      "Transformador Nº 10": 341414.4
+    },
+    "total_kWh": 1471268.2,
+    "smec_kWh": 1659056
+  },
+  {
+    "mes": "2024-10",
+    "trafos": {
+      "Transformador Nº 1": 235120,
+      "Transformador Nº 2": 124003.2,
+      "Transformador Nº 3": 172358.4,
+      "Transformador Nº 4": 223251.2,
+      "Transformador Nº 5": 21929.6,
+      "Transformador Nº 6": 103804.8,
+      "Transformador Nº 7": 219740.8,
+      "Transformador Nº 8": 18091.2,
+      "Transformador Nº 9": 65451.4,
+      "Transformador Nº 10": 333264.0
+    },
+    "total_kWh": 1517014.6,
+    "smec_kWh": 1726656
+  },
+  {
+    "mes": "2024-11",
+    "trafos": {
+      "Transformador Nº 1": 245200,
+      "Transformador Nº 2": 110000,
+      "Transformador Nº 3": 171084.8,
+      "Transformador Nº 4": 155676.8,
+      "Transformador Nº 5": 21190.4,
+      "Transformador Nº 6": 139516.8,
+      "Transformador Nº 7": 198067.2,
+      "Transformador Nº 8": 19748.8,
+      "Transformador Nº 9": 52155.6,
+      "Transformador Nº 10": 307625.6
+    },
+    "total_kWh": 1420266.0,
+    "smec_kWh": 1630983
+  },
+  {
+    "mes": "2024-12",
+    "trafos": {
+      "Transformador Nº 1": 175120,
+      "Transformador Nº 2": 79584.0,
+      "Transformador Nº 3": 130611.2,
+      "Transformador Nº 4": 194457.6,
+      "Transformador Nº 5": 16944.0,
+      "Transformador Nº 6": 16608.0,
+      "Transformador Nº 7": 138022.4,
+      "Transformador Nº 8": 20139.2,
+      "Transformador Nº 9": 14928.2,
+      "Transformador Nº 10": 189961.6
+    },
+    "total_kWh": 976376.2,
+    "smec_kWh": 1161745
+  },
+  {
+    "mes": "2025-01",
+    "trafos": {
+      "Transformador Nº 1": 167292.8,
+      "Transformador Nº 2": 61651.2,
+      "Transformador Nº 3": 115289.6,
+      "Transformador Nº 4": 107376.0,
+      "Transformador Nº 5": 15635.2,
+      "Transformador Nº 6": 113187.2,
+      "Transformador Nº 7": 100553.6,
+      "Transformador Nº 8": 13910.4,
+      "Transformador Nº 9": 8222.2,
+      "Transformador Nº 10": 181904.0
+    },
+    "total_kWh": 885022.2,
+    "smec_kWh": 893847
+  },
+  {
+    "mes": "2025-02",
+    "trafos": {
+      "Transformador Nº 1": 275059.2,
+      "Transformador Nº 2": 115545.6,
+      "Transformador Nº 3": 163372.8,
+      "Transformador Nº 4": 174556.8,
+      "Transformador Nº 5": 19878.4,
+      "Transformador Nº 6": 26684.8,
+      "Transformador Nº 7": 166009.6,
+      "Transformador Nº 8": 18430.4,
+      "Transformador Nº 9": 46310.6,
+      "Transformador Nº 10": 312262.4
+    },
+    "total_kWh": 1318110.6,
+    "smec_kWh": 1530950
+  },
+  {
+    "mes": "2025-03",
+    "trafos": {
+      "Transformador Nº 1": 244646.4,
+      "Transformador Nº 2": 126169.6,
+      "Transformador Nº 3": 172025.6,
+      "Transformador Nº 4": 206470.4,
+      "Transformador Nº 5": 16323.2,
+      "Transformador Nº 6": 30480,
+      "Transformador Nº 7": 135625.6,
+      "Transformador Nº 8": 14312.0,
+      "Transformador Nº 9": 59787.0,
+      "Transformador Nº 10": 296192
+    },
+    "total_kWh": 1302031.8,
+    "smec_kWh": 1507438
+  },
+  {
+    "mes": "2025-04",
+    "trafos": {
+      "Transformador Nº 1": 207830.36,
+      "Transformador Nº 2": 140026.85,
+      "Transformador Nº 3": 178070.29,
+      "Transformador Nº 4": 261749.33,
+      "Transformador Nº 5": 17582.87,
+      "Transformador Nº 6": 30489.83,
+      "Transformador Nº 7": 160239.58,
+      "Transformador Nº 8": 29139.1,
+      "Transformador Nº 9": 68963.89,
+      "Transformador Nº 10": 212767.89
+    },
+    "total_kWh": 1306859.99,
+    "smec_kWh": 1542442
+  },
+  {
+    "mes": "2025-05",
+    "trafos": {
+      "Transformador Nº 1": 260771.24,
+      "Transformador Nº 2": 143358.75,
+      "Transformador Nº 3": 81846.51,
+      "Transformador Nº 4": 354237.87,
+      "Transformador Nº 5": 17028.33,
+      "Transformador Nº 6": 31990.17,
+      "Transformador Nº 7": 160893.22,
+      "Transformador Nº 8": 30884.9,
+      "Transformador Nº 9": 95340.11,
+      "Transformador Nº 10": 260928.11
+    },
+    "total_kWh": 1437279.21,
+    "smec_kWh": 1569958
+  },
+  {
+    "mes": "2025-06",
+    "trafos": {
+      "Transformador Nº 1": 261878.4,
+      "Transformador Nº 2": 143446.4,
+      "Transformador Nº 3": 158601.6,
+      "Transformador Nº 4": 272016.0,
+      "Transformador Nº 5": 65744.0,
+      "Transformador Nº 6": 32835.2,
+      "Transformador Nº 7": 180864.0,
+      "Transformador Nº 8": 29667.2,
+      "Transformador Nº 9": 107576.0,
+      "Transformador Nº 10": 229401.6
+    },
+    "total_kWh": 1482030.4,
+    "smec_kWh": 1651985
+  },
+  {
+    "mes": "2025-07",
+    "trafos": {
+      "Transformador Nº 1": 149100.8,
+      "Transformador Nº 2": 133187.2,
+      "Transformador Nº 3": 134288.0,
+      "Transformador Nº 4": 103392.0,
+      "Transformador Nº 5": 322480,
+      "Transformador Nº 6": 33164.8,
+      "Transformador Nº 7": 181872.0,
+      "Transformador Nº 8": 25796.8,
+      "Transformador Nº 9": 86102.8,
+      "Transformador Nº 10": 224761.6
+    },
+    "total_kWh": 1394146.0,
+    "smec_kWh": 1551607
+  },
+  {
+    "mes": "2025-08",
+    "trafos": {
+      "Transformador Nº 1": 246876.8,
+      "Transformador Nº 2": 153753.6,
+      "Transformador Nº 3": 43088.0,
+      "Transformador Nº 4": 228092.8,
+      "Transformador Nº 5": 356496.0,
+      "Transformador Nº 6": 35424.0,
+      "Transformador Nº 7": 199270.4,
+      "Transformador Nº 8": 29992.0,
+      "Transformador Nº 9": 27525.4,
+      "Transformador Nº 10": 253952.0
+    },
+    "total_kWh": 1574471.0,
+    "smec_kWh": 1690542
+  },
+  {
+    "mes": "2025-09",
+    "trafos": {
+      "Transformador Nº 1": 178556.8,
+      "Transformador Nº 2": 150940.8,
+      "Transformador Nº 3": 55238.4,
+      "Transformador Nº 4": 165196.8,
+      "Transformador Nº 5": 316713.6,
+      "Transformador Nº 6": 32736.0,
+      "Transformador Nº 7": 183801.6,
+      "Transformador Nº 8": 27331.2,
+      "Transformador Nº 9": 38175.2,
+      "Transformador Nº 10": 283129.6
+    },
+    "total_kWh": 1431820.0,
+    "smec_kWh": 1547237
+  },
+  {
+    "mes": "2025-10",
+    "trafos": {
+      "Transformador Nº 1": 104531.2,
+      "Transformador Nº 2": 139113.6,
+      "Transformador Nº 3": 59337.6,
+      "Transformador Nº 4": 77120,
+      "Transformador Nº 5": 292566.4,
+      "Transformador Nº 6": 32032.0,
+      "Transformador Nº 7": 165552.0,
+      "Transformador Nº 8": 30515.2,
+      "Transformador Nº 9": 35336.0,
+      "Transformador Nº 10": 127641.6
+    },
+    "total_kWh": 1063745.6,
+    "smec_kWh": 1172939
+  },
+  {
+    "mes": "2025-11",
+    "trafos": {
+      "Transformador Nº 1": 84953.6,
+      "Transformador Nº 2": 114684.8,
+      "Transformador Nº 3": 53404.8,
+      "Transformador Nº 4": 23158.4,
+      "Transformador Nº 5": 296726.4,
+      "Transformador Nº 6": 30064.0,
+      "Transformador Nº 7": 130137.6,
+      "Transformador Nº 8": 25188.8,
+      "Transformador Nº 9": 64290.8,
+      "Transformador Nº 10": 217353.6
+    },
+    "total_kWh": 1039962.8,
+    "smec_kWh": 1147075.19
+  },
+  {
+    "mes": "2025-12",
+    "trafos": {
+      "Transformador Nº 1": 104387.2,
+      "Transformador Nº 2": 71548.8,
+      "Transformador Nº 3": 36604.8,
+      "Transformador Nº 4": 8051.2,
+      "Transformador Nº 5": 193734.4,
+      "Transformador Nº 6": 20873.6,
+      "Transformador Nº 7": 113600,
+      "Transformador Nº 8": 24444.8,
+      "Transformador Nº 9": 52487.4,
+      "Transformador Nº 10": 204707.2
+    },
+    "total_kWh": 830439.4,
+    "smec_kWh": 923331.81
+  },
+  {
+    "mes": "2026-01",
+    "trafos": {
+      "Transformador Nº 1": 71699.2,
+      "Transformador Nº 2": 45516.8,
+      "Transformador Nº 3": 40652.8,
+      "Transformador Nº 4": 7196.8,
+      "Transformador Nº 5": 116307.2,
+      "Transformador Nº 6": 14358.4,
+      "Transformador Nº 7": 58726.4,
+      "Transformador Nº 8": 12920,
+      "Transformador Nº 9": 28862.4,
+      "Transformador Nº 10": 131852.8
+    },
+    "total_kWh": 528092.8,
+    "smec_kWh": 583584.5
+  },
+  {
+    "mes": "2026-02",
+    "trafos": {
+      "Transformador Nº 1": 130976.0,
+      "Transformador Nº 2": 91456.0,
+      "Transformador Nº 3": 93072.0,
+      "Transformador Nº 4": 51596.8,
+      "Transformador Nº 5": 234892.8,
+      "Transformador Nº 6": 27056.0,
+      "Transformador Nº 7": 136048.0,
+      "Transformador Nº 8": 25992.0,
+      "Transformador Nº 9": 64281.0,
+      "Transformador Nº 10": 271872.0
+    },
+    "total_kWh": 1127242.6,
+    "smec_kWh": 1247013.5
+  },
+  {
+    "mes": "2026-03",
+    "trafos": {
+      "Transformador Nº 1": 159200,
+      "Transformador Nº 2": 105401.6,
+      "Transformador Nº 3": 105913.6,
+      "Transformador Nº 4": 106899.2,
+      "Transformador Nº 5": 306291.2,
+      "Transformador Nº 6": 32556.8,
+      "Transformador Nº 7": 183667.2,
+      "Transformador Nº 8": 31924.8,
+      "Transformador Nº 9": 76358.8,
+      "Transformador Nº 10": 387318.4
+    },
+    "total_kWh": 1495531.6,
+    "smec_kWh": 1635704.5
+  },
+  {
+    "mes": "2026-04",
+    "trafos": {
+      "Transformador Nº 1": 167936.0,
+      "Transformador Nº 2": 101062.4,
+      "Transformador Nº 3": 85974.4,
+      "Transformador Nº 4": 138784.0,
+      "Transformador Nº 5": 167712.0,
+      "Transformador Nº 6": 29987.2,
+      "Transformador Nº 7": 140604.8,
+      "Transformador Nº 8": 24179.2,
+      "Transformador Nº 9": 68254.2,
+      "Transformador Nº 10": 295721.6
+    },
+    "total_kWh": 1220215.8,
+    "smec_kWh": 1372388
+  },
+  {
+    "mes": "2026-05",
+    "trafos": {
+      "Transformador Nº 1": 174672.0,
+      "Transformador Nº 2": 122995.2,
+      "Transformador Nº 3": 50835.2,
+      "Transformador Nº 4": 234057.6,
+      "Transformador Nº 5": 82316.8,
+      "Transformador Nº 6": 26736.0,
+      "Transformador Nº 7": 119568.0,
+      "Transformador Nº 8": 22049.6,
+      "Transformador Nº 9": 71300.6,
+      "Transformador Nº 10": 262889.6
+    },
+    "total_kWh": 1167420.6,
+    "smec_kWh": 1271306
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "trafos_por_sector": {
+    "TEJ": [
+      "Transformador Nº 1",
+      "Transformador Nº 2",
+      "Transformador Nº 3",
+      "Transformador Nº 4",
+      "Transformador Nº 6"
+    ],
+    "TERM": [
+      "Transformador Nº 7",
+      "Transformador Nº 8",
+      "Transformador Nº 9"
+    ],
+    "HIL": [
+      "Transformador Nº 10"
+    ],
+    "MIXTO_5": {
+      "trafo": "Transformador Nº 5",
+      "pct_tej": 0.6,
+      "pct_term": 0.3,
+      "pct_hil": 0.1
+    }
+  },
+  "sectores": {
+    "TEJ": {
+      "label": "Tejeduría",
+      "color": "#2D7EF7"
+    },
+    "TERM": {
+      "label": "Terminado",
+      "color": "#06B6D4"
+    },
+    "HIL": {
+      "label": "Hilandería",
+      "color": "#A855F7"
+    }
+  }
+}

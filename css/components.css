@@ -1,0 +1,269 @@
+/**
+ * components.css
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Componentes UI: KPI blocks, section cards, chips, badges, alerts,
+ * segmenters, charts, progress bars, gauges · Colortex SA · Matriz Energética
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+/* ══════════════════════════════════════════════════════════════════
+   SEGMENTERS / FILTROS DE PERÍODO
+══════════════════════════════════════════════════════════════════ */
+.seg-panel { background: var(--bg2); border: 1px solid var(--border2); border-radius: 7px; padding: 9px 12px; margin-bottom: 10px; }
+.seg-row   { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+.seg-row + .seg-row { margin-top: 5px; }
+.seg-lbl   { font-family: 'Calibri', var(--fontc); font-size: 9px; font-weight: 700; letter-spacing: 1.2px; color: var(--text3); text-transform: uppercase; margin-right: 3px; }
+
+.seg-btn {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-family: var(--fontc);
+  font-size: 11px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.12s;
+  white-space: nowrap;
+  display: inline-block;
+}
+.seg-btn:hover          { border-color: var(--accent); color: var(--text); }
+.seg-btn.active         { background: var(--accent); border-color: var(--accent); color: #fff; }
+.seg-btn select         { background: transparent; border: none; outline: none; color: inherit; font-family: var(--fontc); font-size: 11px; cursor: pointer; }
+.seg-btn select option  { background: var(--bg3); color: var(--text); }
+.seg-date-input         { background: transparent; border: none; outline: none; color: inherit; font-family: var(--fontc); font-size: 11px; cursor: pointer; width: 110px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION CARDS
+══════════════════════════════════════════════════════════════════ */
+.dash-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 11px 13px;
+  margin-bottom: 9px;
+}
+.sec-hdr   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.sec-title { font-family: 'Calibri', var(--fontc); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: var(--text2); text-transform: uppercase; }
+
+/* ══════════════════════════════════════════════════════════════════
+   KPI GRID LAYOUTS
+══════════════════════════════════════════════════════════════════ */
+.kg   { display: grid; gap: 7px; }
+.kg-2 { grid-template-columns: repeat(2, 1fr); }
+.kg-3 { grid-template-columns: repeat(3, 1fr); }
+.kg-4 { grid-template-columns: repeat(4, 1fr); }
+.kg-5 { grid-template-columns: repeat(5, 1fr); }
+.kg-6 { grid-template-columns: repeat(6, 1fr); }
+
+/* ══════════════════════════════════════════════════════════════════
+   KPI BLOCK
+══════════════════════════════════════════════════════════════════ */
+.kblock {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 9px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  transition: border 0.15s;
+}
+.kblock:hover  { border-color: var(--border2); }
+.kblock.hl     { border: 1.5px solid var(--green); box-shadow: 0 0 10px rgba(34,197,94,0.07) inset; }
+.kblock.ac     { border-color: var(--accent); }
+.kblock.wa     { border-color: var(--orange); }
+.kblock.da     { border-color: var(--red); }
+.kblock.nd     { border-color: rgba(234,179,8,0.3); background: rgba(234,179,8,0.03); }
+
+/* Contenido KPI block */
+.klabel { font-family: 'Calibri', var(--fontc); font-size: 10px; font-weight: 700; letter-spacing: 0.8px; color: var(--text2); text-transform: uppercase; line-height: 1.2; }
+.kval   { font-family: var(--fontv), Arial; font-size: 17px; font-weight: 700; color: var(--text); line-height: 1.05; }
+.kval.lg { font-size: 19px; }
+.kval.sm { font-size: 15px; }
+.kval.xs { font-size: 13px; }
+.ksub   { font-family: 'Calibri', var(--fontc); font-size: 11px; font-weight: 500; color: var(--text2); line-height: 1.3; }
+
+/* Badges inline en KPI */
+.kbadge {
+  display: inline-block;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ── KPI Dual (dos valores en un kblock) ───────────────────────── */
+.kdual   { display: flex; justify-content: space-between; align-items: flex-start; gap: 6px; margin-top: 4px; }
+.kd      { flex: 1; }
+.kd.r    { text-align: right; }
+.kd-sep  { width: 1px; background: var(--border); align-self: stretch; margin: 1px 0; flex-shrink: 0; }
+
+/* Símbolos monetarios */
+.ars-sym,
+.usd-sym { font-family: 'Calibri', var(--fontc); font-size: 0.58em; font-weight: 600; color: var(--text3); margin-right: 2px; letter-spacing: 0.5px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   BADGES DE COLOR (semáforo)
+══════════════════════════════════════════════════════════════════ */
+.bg-g { background: rgba(34,197,94,0.12);  color: var(--green); }
+.bg-r { background: rgba(239,68,68,0.12);  color: var(--red); }
+.bg-o { background: rgba(249,115,22,0.12); color: var(--orange); }
+.bg-b { background: rgba(45,126,247,0.12); color: var(--accent); }
+
+/* ══════════════════════════════════════════════════════════════════
+   CHIPS (clasificación inline en tablas/cards)
+══════════════════════════════════════════════════════════════════ */
+.chip {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-family: 'Calibri', var(--fontc);
+  text-transform: uppercase;
+}
+.cg  { background: rgba(34,197,94,0.10);  color: var(--green); }
+.cb  { background: rgba(45,126,247,0.10); color: var(--accent); }
+.co  { background: rgba(249,115,22,0.10); color: var(--orange); }
+.cgr { background: rgba(139,148,176,0.08); color: var(--text2); }
+.cp  { background: rgba(168,85,247,0.10); color: var(--purple); }
+
+/* ══════════════════════════════════════════════════════════════════
+   PROGRESS BARS
+══════════════════════════════════════════════════════════════════ */
+.pb-wrap { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+.pb      { height: 100%; border-radius: 2px; transition: width 0.6s; }
+.pb-g    { background: var(--green); }
+.pb-o    { background: var(--orange); }
+.pb-r    { background: var(--red); }
+.pb-b    { background: var(--accent); }
+
+/* ══════════════════════════════════════════════════════════════════
+   ALERT BANNERS
+══════════════════════════════════════════════════════════════════ */
+.alert-banner {
+  border-radius: 6px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 8px;
+}
+.alert-r    { background: rgba(239,68,68,0.08);  border: 1px solid rgba(239,68,68,0.3); }
+.alert-o    { background: rgba(249,115,22,0.08); border: 1px solid rgba(249,115,22,0.3); }
+.alert-icon { font-size: 14px; flex-shrink: 0; }
+.alert-title { font-family: 'Calibri', var(--fontc); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.alert-det  { font-family: var(--fontc); font-size: 11px; color: var(--text2); margin-top: 1px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   CHART CARDS
+══════════════════════════════════════════════════════════════════ */
+.ccrd   { background: var(--card); border: 1px solid var(--border); border-radius: 7px; padding: 11px 13px; }
+canvas  { width: 100% !important; }
+
+/* ══════════════════════════════════════════════════════════════════
+   GAUGE LABELS
+══════════════════════════════════════════════════════════════════ */
+.gauge-eq-lbl    { font-family: 'Calibri', var(--fontc); font-size: 12px; font-weight: 700; color: var(--text); text-transform: uppercase; text-align: center; margin-bottom: 3px; }
+.gauge-planta-lbl { font-family: 'Calibri', var(--fontc); font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase; margin-bottom: 3px; }
+
+/* ══════════════════════════════════════════════════════════════════
+   NO-DATA OVERLAYS / BADGES
+══════════════════════════════════════════════════════════════════ */
+.no-data-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(234,179,8,0.1);
+  border: 1px solid rgba(234,179,8,0.3);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+}
+.no-data-overlay { position: relative; }
+.no-data-overlay::after {
+  content: 'SIN DATOS';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  border-radius: 5px;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+/* Status dots */
+.incomplete-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); display: inline-block; margin-right: 4px; flex-shrink: 0; }
+.complete-dot   { width: 7px; height: 7px; border-radius: 50%; background: var(--green);  display: inline-block; margin-right: 4px; flex-shrink: 0; }
+.missing-dot    { width: 7px; height: 7px; border-radius: 50%; background: var(--red);    display: inline-block; margin-right: 4px; flex-shrink: 0; }
+
+/* Audit badge */
+.audit-badge {
+  display: inline-block;
+  font-family: 'Calibri', var(--fontc);
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(234,179,8,0.12);
+  color: var(--yellow);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Cost section spacing */
+.cost-section .kblock { padding: 12px 14px; }
+.cost-section .kd-sep { margin: 2px 0; }
+
+/* ── FORM TABS (EE) ───────────────────────────────────────────────── */
+.ftab {
+  font-family: 'Calibri', var(--fontc);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  color: var(--text3);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.15s;
+}
+.ftab:hover  { color: var(--text); }
+.ftab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── KPIS CARDS EE ───────────────────────────────────────────────── */
+.kpi-card {
+  background: var(--bg2);
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  padding: 11px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.kpi-label { font-family: 'Calibri', var(--fontc); font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--text3); }
+.kpi-val   { font-family: var(--fontv), Arial; font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.1; }
+.kpi-sub   { font-family: 'Calibri', var(--fontc); font-size: 11px; color: var(--text3); }
+
+/* ── PANEL SECTIONS ──────────────────────────────────────────────── */
+.panel-section       { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.panel-section-title { font-family: 'Calibri', var(--fontc); font-size: 11px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }

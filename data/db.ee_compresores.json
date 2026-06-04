@@ -1,0 +1,148 @@
+{
+  "equipos": [
+    {
+      "id": "C01",
+      "n": "Compresor #1",
+      "pot_carga": 137,
+      "pot_desc": 44,
+      "caudal": 25.5,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C02",
+      "n": "Compresor #2",
+      "pot_carga": 137,
+      "pot_desc": 44.2,
+      "caudal": 25.5,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C03",
+      "n": "Compresor #3",
+      "pot_carga": 137,
+      "pot_desc": 44.2,
+      "caudal": 25.5,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C04",
+      "n": "Compresor #4",
+      "pot_carga": 137,
+      "pot_desc": 44.2,
+      "caudal": 25.5,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C06",
+      "n": "Compresor #6",
+      "pot_carga": 250,
+      "pot_desc": 100,
+      "caudal": 35.75,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C07",
+      "n": "Compresor #7",
+      "pot_carga": 250,
+      "pot_desc": 100,
+      "caudal": 35.98,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C08",
+      "n": "Compresor #8",
+      "pot_carga": 250,
+      "pot_desc": 0,
+      "caudal": 32,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C09",
+      "n": "Compresor #9",
+      "pot_carga": 450,
+      "pot_desc": 180,
+      "caudal": 75,
+      "sector": "TEJ",
+      "activo": true
+    },
+    {
+      "id": "C10",
+      "n": "Compresor #10",
+      "pot_carga": 75,
+      "pot_desc": 30,
+      "caudal": 12.71,
+      "sector": "HIL_TERM",
+      "activo": true
+    },
+    {
+      "id": "C11",
+      "n": "Compresor #11",
+      "pot_carga": 75,
+      "pot_desc": 30,
+      "caudal": 12.71,
+      "sector": "HIL_TERM",
+      "activo": true
+    }
+  ],
+  "lecturas": [
+    {
+      "mes": "2026-05",
+      "periodo_dias": null,
+      "dias_terminado": null,
+      "dias_hilanderia": null,
+      "caudal_dem_tej": 17.0,
+      "caudal_dem_term": 17.0,
+      "caudal_dem_hil": 17.0,
+      "pct_rendimiento": 0.75,
+      "compresores": {
+        "C01": {
+          "hs_carga": 0,
+          "hs_desc": 0
+        },
+        "C02": {
+          "hs_carga": 251,
+          "hs_desc": 134
+        },
+        "C03": {
+          "hs_carga": 621,
+          "hs_desc": 109
+        },
+        "C04": {
+          "hs_carga": 598,
+          "hs_desc": 82
+        },
+        "C06": {
+          "hs_carga": 491,
+          "hs_desc": 6
+        },
+        "C07": {
+          "hs_carga": 391,
+          "hs_desc": 18
+        },
+        "C08": {
+          "hs_carga": 0,
+          "hs_desc": 0
+        },
+        "C09": {
+          "hs_carga": 199,
+          "hs_desc": 2
+        },
+        "C10": {
+          "hs_carga": 488,
+          "hs_desc": 228
+        },
+        "C11": {
+          "hs_carga": 0,
+          "hs_desc": 0
+        }
+      }
+    }
+  ]
+}
